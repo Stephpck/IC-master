@@ -1,0 +1,11 @@
+<apex:page showHeader="true" sidebar="true" standardController="Account" docType="html-5.0">
+     <ggo:GeocodeComponent recId="{!Account.id}" recType="Account" 
+         street="Billing_Street__c" city="Billing_City__c" 
+         postalCode="Billing_Code__c" state="Billing_State__c" 
+         country="Billing_Country__c" 
+         geoLoc="GeoLoc__c"  displayfields="Phone,Type,website" 
+         normStreet="Normalized_Street__c" normCity="Normalized_City__c" 
+         normPostalCode="Normalized_Postal_Code__c" normState="Normalized_State__c" 
+         normCountry="Normalized_Country__c"  
+         maxResults="50" nearbyDistance="10"/>
+ </apex:page>
